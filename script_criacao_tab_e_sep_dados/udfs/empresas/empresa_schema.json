@@ -1,0 +1,56 @@
+{
+      "BigQuery Schema": [
+        
+          {
+            "description": "NÚMERO BASE DE INSCRIÇÃO NO CNPJ (OITO PRIMEIROS DÍGITOS DO CNPJ).",
+            "mode": "NULLABLE",
+            "name": "cnpj_basico",
+            "type": "STRING"
+          },  
+          {
+            "description": "NOME EMPRESARIAL DA PESSOA JURÍDICA",
+            "mode": "NULLABLE",
+            "name": "razao_social",
+            "type": "STRING"
+          },
+		  {
+            "description": "CÓDIGO DA NATUREZA JURÍDICA",
+            "mode": "NULLABLE",
+            "name": "natureza_juridica",
+            "type": "STRING"
+          },  
+          {
+            "description": "QUALIFICAÇÃO DA PESSOA FÍSICA RESPONSÁVEL PELA EMPRESA",
+            "mode": "NULLABLE",
+            "name": "qualificacao_responsavel",
+            "type": "STRING"
+          },
+		  {
+            "description": "CAPITAL SOCIAL DA EMPRESA",
+            "mode": "NULLABLE",
+            "name": "capital_social",
+            "type": "STRING"
+          },  
+          {
+            "description": "CÓDIGO DO PORTE DA EMPRESA: 1 – NÃO INFORMADO 2 - MICRO EMPRESA 03 - EMPRESA DE PEQUENO PORTE 05 - DEMAIS",
+            "mode": "NULLABLE",
+            "name": "porte_empresa",
+            "type": "STRING"
+          },
+		  {
+            "description": "O ENTE FEDERATIVO RESPONSÁVEL É PREENCHIDO PARA OS CASOS DE ÓRGÃOS E ENTIDADES DO GRUPO DE NATUREZA JURÍDICA 1XXX.PARA AS DEMAIS NATUREZAS, ESTE ATRIBUTO FICA EM BRANCO",
+            "mode": "NULLABLE",
+            "name": "ente_federativo",
+            "type": "STRING"
+          },
+		  {
+            "description": "Time when the data was inserted into data lake",
+            "mode": "NULLABLE",
+            "name": "data_cadastro",
+            "type": "TIMESTAMP"
+          }
+         
+        ]
+}
+
+        
