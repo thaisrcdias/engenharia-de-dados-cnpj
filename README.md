@@ -14,5 +14,6 @@ Perguntas Chave
 
 <b>Arquitetura do Projeto</b>
 
+![image](https://user-images.githubusercontent.com/69485358/134758443-3449806f-935c-43c2-b749-52521ca1cf07.png)
 
-![image](https://user-images.githubusercontent.com/69485358/134758387-ab64d164-0ded-4e51-8a67-657aa7f9f9f9.png)
+
