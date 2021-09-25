@@ -18,10 +18,11 @@ Perguntas Chave
 
 1. Extração da fonte de dados. Para isso foi criada uma lambda function na AWS, que possui agendamento por timer. A fonte de dados pública do CNPJ possui periodicidade de atualização mensal, com isso a carga de dados será feita mensalmente.
 Essa lambda function faz download dos arquivos e salva em um bucket no S3.<br>
-<ul>Observações: 
-    <li> Antes da extração dos dados, foi analisada as perguntas chaves e layout dos campos dos arquivos, para o download apenas dos arquivos necessários. </li>
-   <li>  Inicialmente seria usada a cloud da AWS no projeto, mas com o intuito de minimização de custos, os arquivos baixados foram migrados para a Cloud Storage da GCP (Google Cloud Plataform).</li>
-</ul>
+   <ul>Observações: 
+       <li> Antes da extração dos dados, foi analisada as perguntas chaves e layout dos campos dos arquivos, para o download apenas dos arquivos necessários. </li>
+       <li>  Inicialmente seria usada a cloud da AWS no projeto, mas com o intuito de minimização de custos, os arquivos baixados foram migrados para a Cloud Storage da GCP (Google Cloud Plataform).</li>
+   </ul>
+
 2. Para a migração dos arquivos foi utilizado o serviço Transfer da GCP, onde é feito o espelhamento dos dados.
 3. Foi criada uma cloud function da GCP, que será acionada pelo evento, de sempre que um novo arquivo for salvo no Storage, ela será acionada e a partir dela são acionadas as DAGs no Airflow, que foi escolhida como nossa ferramenta de orquestração do pipeline de dados.
 4. A partir disso será realizada a ingestão de dados no Big Query, aque será nosso lakehouse, que é uma junção de data lake com DW. No Big Query foram criadas as seguintes camadas: Raw (onde o dado "bruto" é salvo),  Trusted (onde o dado é salvo, após as devidas limpezas) e Semantic, que é a camada onde possui as Views, para serem consumidas no reatório final.
