@@ -1,0 +1,56 @@
+{
+      "BigQuery Schema": [
+        
+          {
+            "description": "NUMERO BASE DE INSCRICAO NO CNPJ (OITO PRIMEIROS DIGITOS DO CNPJ)",
+            "mode": "NULLABLE",
+            "name": "cnpj_basico",
+            "type": "STRING"
+          },  
+          {
+            "description": "INDICADOR DA EXISTÊNCIA DA OPÇÃO PELO SIMPLES. S - SIM N - NÃO EM BRANCO – OUTROS",
+            "mode": "NULLABLE",
+            "name": "opcao_simples",
+            "type": "STRING"
+          },
+		  {
+            "description": "DATA DE OPCAOO PELO SIMPLES",
+            "mode": "NULLABLE",
+            "name": "data_opcao_simples",
+            "type": "STRING"
+          },  
+          {
+            "description": "DATA DE EXCLUSAO DO SIMPLES",
+            "mode": "NULLABLE",
+            "name": "data_exclusao_simples",
+            "type": "STRING"
+          },
+		  {
+            "description": "INDICADOR DA EXISTÊNCIA DA OPÇÃO PELO MEI S - SIM N - NÃO EM BRANCO - OUTROS",
+            "mode": "NULLABLE",
+            "name": "opcao_mei",
+            "type": "STRING"
+          },  
+          {
+            "description": "DATA DE OPCAO PELO MEI",
+            "mode": "NULLABLE",
+            "name": "data_opcao_mei",
+            "type": "STRING"
+          },
+		  {
+            "description": "DATA DE EXCLUSAO DO MEI",
+            "mode": "NULLABLE",
+            "name": "data_exclusao_mei",
+            "type": "STRING"
+          },
+		  {
+            "description": "Time when the data was inserted into data lake",
+            "mode": "NULLABLE",
+            "name": "data_cadastro",
+            "type": "TIMESTAMP"
+          }
+         
+        ]
+}
+
+        

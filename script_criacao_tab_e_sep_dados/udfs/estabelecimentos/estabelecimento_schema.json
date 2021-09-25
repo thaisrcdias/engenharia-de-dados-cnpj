@@ -1,0 +1,195 @@
+{
+      "BigQuery Schema": [
+        
+          {
+            "description": "NUMERO BASE DE INSCRICAO NO CNPJ (OITO PRIMEIROS DIGITOS DO CNPJ).",
+            "mode": "NULLABLE",
+            "name": "cnpj_basico",
+            "type": "STRING"
+          },  
+          {
+            "description": "NUMERO DO ESTABELECIMENTO DE INSCRICAO NO CNPJ (DONONO ATE O DECIMO SEGUNDO DIGITO DO CNPJ).",
+            "mode": "NULLABLE",
+            "name": "cnpj_ordem",
+            "type": "STRING"
+          },
+		  {
+            "description": "DiGITO VERIFICADOR DO NUMERO DE INSCRICAO NO CNPJ (DOIS ULTIMOS DIGITOS DO CNPJ)",
+            "mode": "NULLABLE",
+            "name": "cnpj_dv",
+            "type": "STRING"
+          },  
+		  {
+            "description": "CODIGO DO IDENTIFICADOR MATRIZ/FILIAL: 1 – MATRIZ 2 – FILIAL",
+            "mode": "NULLABLE",
+            "name": "identificador_matriz",
+            "type": "STRING"
+          }, 
+		  {
+            "description": "CORRESPONDE AO NOME FANTASIA",
+            "mode": "NULLABLE",
+            "name": "nome_fantasia",
+            "type": "STRING"
+          },
+		
+		  {
+            "description": "CODIGO DA SITUACAO CADASTRAL: 01 – NULA 2 – ATIVA 3 – SUSPENSA 4 – INAPTA 08 – BAIXADA",
+            "mode": "NULLABLE",
+            "name": "situacao_cadastral",
+            "type": "STRING"
+          },  
+          {
+            "description": "DATA SITUACAO CADASTRAL",
+            "mode": "NULLABLE",
+            "name": "data_situacao_cadastral",
+            "type": "STRING"
+          },
+		  {
+            "description": "CODIGO DO MOTIVO DA SITUACAO CADASTRAL",
+            "mode": "NULLABLE",
+            "name": "cod_mtv_sit_cadastral",
+            "type": "STRING"
+          },
+		   {
+            "description": "NOME DA CIDADE NO EXTERIOR",
+            "mode": "NULLABLE",
+            "name": "nome_cidade_exterior",
+            "type": "STRING"
+          },
+		  {
+            "description": "CODIGO DO PAIS",
+            "mode": "NULLABLE",
+            "name": "cod_pais",
+            "type": "STRING"
+          },
+		  {
+            "description": "DATA DE INICIO DA ATIVIDADE",
+            "mode": "NULLABLE",
+            "name": "data_inicio_atividade",
+            "type": "STRING"
+          },
+		  {
+            "description": "CODIGO DA ATIVIDADE ECONÔMICA PRINCIPAL DO ESTABELECIMENTO",
+            "mode": "NULLABLE",
+            "name": "cnae_fiscal_principal",
+            "type": "STRING"
+          },
+		  {
+            "description": "CODIGO DA(S) ATIVIDADE(S) ECONOMICA(S) SECUNDARIA(S) DO ESTABELECIMENTO",
+            "mode": "NULLABLE",
+            "name": "cnae_fiscal_secundaria",
+            "type": "STRING"
+          },
+		  {
+            "description": "DESCRICAO DO TIPO DE LOGRADOURO",
+            "mode": "NULLABLE",
+            "name": "tipo_logradouro",
+            "type": "STRING"
+          },
+		  {
+            "description": "NOME DO LOGRADOURO ONDE SE LOCALIZA O ESTABELECIMENTO",
+            "mode": "NULLABLE",
+            "name": "logradouro",
+            "type": "STRING"
+          },
+		   {
+            "description": "NUMERO ONDE SE LOCALIZA O ESTABELECIMENTO. QUANDO NAO HOUVER PREENCHIMENTO DO NUMERO HAVERA ‘S/N’.",
+            "mode": "NULLABLE",
+            "name": "numero",
+            "type": "STRING"
+          },
+		  {
+            "description": "COMPLEMENTO PARA O ENDEREÇO DE LOCALIZACAO DO ESTABELECIMENTO",
+            "mode": "NULLABLE",
+            "name": "complemento",
+            "type": "STRING"
+          },
+		  {
+            "description": "BAIRRO ONDE SE LOCALIZA O ESTABELECIMENTO",
+            "mode": "NULLABLE",
+            "name": "bairro",
+            "type": "STRING"
+          },
+		  {
+            "description": "CoDIGO DE ENDEREcAMENTO POSTAL REFERENTE AO LOGRADOURO NO QUAL O ESTABELECIMENTO ESTA LOCALIZADO",            
+			"mode": "NULLABLE",
+            "name": "cep",
+            "type": "STRING"
+          },
+		  {
+            "description": "SIGLA DA UNIDADE DA FEDERACAO EM QUE SE ENCONTRA O ESTABELECIMENTO",
+            "mode": "NULLABLE",
+            "name": "uf",
+            "type": "STRING"
+          },
+		  {
+            "description": "CEDIGO DO MUNICIPIO DE JURISDICAO ONDE SE ENCONTRA O ESTABELECIMENTO",
+            "mode": "NULLABLE",
+            "name": "cod_municipio",
+            "type": "STRING"
+          },
+		  {
+            "description": "CONTEM O DDD 1",
+            "mode": "NULLABLE",
+            "name": "ddd_um",
+            "type": "STRING"
+          },
+		  {
+            "description": "CONTEM O NuMERO DO TELEFONE 1",
+            "mode": "NULLABLE",
+            "name": "telefone_um",
+            "type": "STRING"
+          },
+		  {
+            "description": "CONTEM O DDD 2",
+            "mode": "NULLABLE",
+            "name": "ddd_dois",
+            "type": "STRING"
+          },
+		  {
+            "description": "CONTEM O NUMERO DO TELEFONE 2",
+            "mode": "NULLABLE",
+            "name": "telefone_dois",
+            "type": "STRING"
+          },
+		  {
+            "description": "CONTEM O DDD DO FAX",
+            "mode": "NULLABLE",
+            "name": "ddd_fax",
+            "type": "STRING"
+          },
+		  {
+            "description": "CONTEM O NUMERO DO FAX",
+            "mode": "NULLABLE",
+            "name": "fax",
+            "type": "STRING"
+          },
+		  {
+            "description": "CONTEM O E-MAIL DO CONTRIBUINTE",
+            "mode": "NULLABLE",
+            "name": "correrio_eletronico",
+            "type": "STRING"
+          },
+		  {
+            "description": "SITUACAO ESPECIAL DA EMPRESA",
+            "mode": "NULLABLE",
+            "name": "situacao_especial",
+            "type": "STRING"
+          },
+		   {
+            "description": "DATA EM QUE A EMPRESA ENTROU EM SITUACAO ESPECIAL",
+            "mode": "NULLABLE",
+            "name": "data_situ_especial",
+            "type": "STRING"
+          },
+		  {
+            "description": "Time when the data was inserted into data lake",
+            "mode": "NULLABLE",
+            "name": "data_cadastro",
+            "type": "TIMESTAMP"
+          }
+         
+        ]
+}
+
+        

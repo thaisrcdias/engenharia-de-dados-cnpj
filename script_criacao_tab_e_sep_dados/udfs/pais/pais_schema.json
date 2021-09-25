@@ -1,0 +1,26 @@
+{
+      "BigQuery Schema": [
+        
+          {
+            "description": "CODIGO DO PAIS",
+            "mode": "NULLABLE",
+            "name": "codigo",
+            "type": "STRING"
+          },  
+          {
+            "description": "NOME DO PAIS",
+            "mode": "NULLABLE",
+            "name": "descricao",
+            "type": "STRING"
+          },
+		  {
+            "description": "Time when the data was inserted into data lake",
+            "mode": "NULLABLE",
+            "name": "data_cadastro",
+            "type": "TIMESTAMP"
+          }
+         
+        ]
+}
+
+        
