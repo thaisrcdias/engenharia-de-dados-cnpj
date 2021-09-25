@@ -28,5 +28,11 @@ Essa lambda function faz download dos arquivos e salva em um bucket no S3.<br>
 4. A partir disso será realizada a ingestão de dados no Big Query, aque será nosso lakehouse, que é uma junção de data lake com DW. No Big Query foram criadas as seguintes camadas: Raw (onde o dado "bruto" é salvo),  Trusted (onde o dado é salvo, após as devidas limpezas) e Semantic, que é a camada onde possui as Views, para serem consumidas no reatório final.
 
 <br>
+<br> Estrutura de Pastas</b>
+     <ul><li>lambdaS3: Código da lambda function para obtenção dos dados no site da receita federal   </li>
+         <li> </li>
+         <li> </li>
+         <li> </li>
+     </ul>  
 <b>Relatórios
    Diponibilizados em: https://datastudio.google.com/s/iLCAUxfXSjw
