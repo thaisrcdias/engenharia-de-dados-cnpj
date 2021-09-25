@@ -17,9 +17,10 @@ Perguntas Chave
 ![image](https://user-images.githubusercontent.com/69485358/134758443-3449806f-935c-43c2-b749-52521ca1cf07.png)
 
 1. Extração da fonte de dados. Para isso foi criada uma lambda function na AWS, que possui agendamento por timer. A fonte de dados pública do CNPJ possui periodicidade de atualização mensal, com isso a carga de dados será feita mensalmente.
-Essa lambda function faz download dos arquivos e salva em um bucket no S3.
+Essa lambda function faz download dos arquivos e salva em um bucket no S3.<br>
 Observações: 
-     1.Antes da extração dos dados, foi analisada as perguntas chaves e layout dos campos dos arquivos, para o download apenas dos arquivos necessários.
-     2. Inicialmente seria usada a cloud da AWS no projeto, mas com o intuito de minimização de custos, os arquivos baixados foram migrados para a GCP.
-2.
+    <li> 1.Antes da extração dos dados, foi analisada as perguntas chaves e layout dos campos dos arquivos, para o download apenas dos arquivos necessários. </li>
+   <li>  2. Inicialmente seria usada a cloud da AWS no projeto, mas com o intuito de minimização de custos, os arquivos baixados foram migrados para a Cloud Storage da GCP (Google Cloud Plataform).</li>
+2. Para a migração dos arquivos foi utilizado o serviço Transfer da GCP, onde é feito o espelhamento dos dados.
+3. 
 
