@@ -12,6 +12,9 @@ Perguntas Chave
 5. Qual a classe de CNAE com o maior capital social médio no Brasil no último ano?
 6. Qual a média do capital social das empresas de pequeno porte por natureza  jurídica no último ano?
 
+Relatórios Diponibilizados em: https://datastudio.google.com/s/iLCAUxfXSjw
+
+
 <b>Arquitetura do Projeto</b>
 
 ![image](https://user-images.githubusercontent.com/69485358/134758443-3449806f-935c-43c2-b749-52521ca1cf07.png)
