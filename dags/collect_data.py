@@ -29,8 +29,7 @@ with models.DAG(
     
     call_lambda = bash_operator.BashOperator(
         task_id='call_lambda',
-        bash_command='pwd'
-        #bash_command='curl {0})'.format(models.Variable.get('lambda_endpoint'))
+        bash_command='curl {0})'.format(models.Variable.get('lambda_endpoint'))
 
 
     )
