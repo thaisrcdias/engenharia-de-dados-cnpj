@@ -49,15 +49,21 @@ Essa lambda function faz download dos arquivos e salva em um bucket no S3.<br>
 <b>Tratamento dos Dados</b>
 <br>
 <br>
-<b>Características da Solução </b>
+<b>Características da Solução: </b>
+<br>
 <ul> <b>Escalabilidade</b>
    <li>Google Cloud Storage: Altamente escalável para grande volume de dados e distribuído entre zonas.</li>
    <li> Uso do Big Query</li>
    <li> Airflow executando com três nós no Kubernates, ou seja, com três workers no ambiente </li>
    <li> Dataflow, que proporciona escalonamento automático horizontal de recursos de workers para maximizar a utilização de recursos </li>
 </ul>
- </li>
-</li>
+<br>
+<ul> <b>Confiabilidade</b>
+   <li> Google Cloud Storage: Altamente escalável para grande volume de dados e distribuído entre zonas.</li>
+   <li> Dag Retry: Em caso de falha em algum dos passos do pipeline no Airflow, o retry está habilitado, para o job ser executado novamente.</li>
+   <li> Observabilidade: Todo pipeline pode ser monitorado via interface do Airflow.</li>
+</ul>
+
 <br>
 <b> Estrutura de Pastas</b>
      <ul><li>lambdaS3: Código da lambda function para obtenção dos dados no site da receita federal, que descompacta o afrquivo zip e salva no bucket do S3. </li>
