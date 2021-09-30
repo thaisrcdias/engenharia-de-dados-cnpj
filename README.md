@@ -16,6 +16,7 @@ Perguntas Chave
 
 Relatórios Diponibilizados em: https://datastudio.google.com/s/iLCAUxfXSjw
 
+<hr>
 
 <b>Arquitetura do Projeto</b>
 
@@ -35,6 +36,7 @@ Essa lambda function faz download dos arquivos e salva em um bucket no S3.<br>
 <br>
 <b>Pitch da Solução:</b> https://www.youtube.com/watch?v=7vvRjtoIS_Q
 <br>
+<hr>
 <br>
 <b> Estrutura de Pastas</b>
      <ul><li>lambdaS3: Código da lambda function para obtenção dos dados no site da receita federal, que descompacta o afrquivo zip e salva no bucket do S3. </li>
