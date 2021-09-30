@@ -51,17 +51,31 @@ Essa lambda function faz download dos arquivos e salva em um bucket no S3.<br>
 <br>
 <b>Características da Solução: </b>
 <br>
-<ul> <b>Escalabilidade</b>
+<br>
+<ul> <b>Escalabilidade:</b>
    <li>Google Cloud Storage: Altamente escalável para grande volume de dados e distribuído entre zonas.</li>
    <li> Uso do Big Query</li>
    <li> Airflow executando com três nós no Kubernates, ou seja, com três workers no ambiente </li>
    <li> Dataflow, que proporciona escalonamento automático horizontal de recursos de workers para maximizar a utilização de recursos </li>
 </ul>
-<br>
 <ul> <b>Confiabilidade</b>
    <li> Google Cloud Storage: Altamente escalável para grande volume de dados e distribuído entre zonas.</li>
    <li> Dag Retry: Em caso de falha em algum dos passos do pipeline no Airflow, o retry está habilitado, para o job ser executado novamente.</li>
    <li> Observabilidade: Todo pipeline pode ser monitorado via interface do Airflow.</li>
+</ul>
+<ul> <b>Facilidade de Integração</b>
+   <li> Versionamento no GIT (branch de master e develop)</li>
+   <li> CI/CD para deploy em ambiente de produção (segunda fase projeto) </li>
+</ul>
+<ul> <b>Eficiência Operacional</b>
+   <li> Big Query: Permite consultas de gtande volume de dados usando SQL, em segundos</li>
+   <li> Aquisição de Dados (camada Landing) desacoplada da camada de ingestão de dados (Lakehouse) </li>
+</ul>
+<ul> <b>Otimização de Custos</b>
+   <li> Armazenamento da fonte de dados na Cloud Storage da GCP</li>
+   <li> Utilização do cluster do Dataflow, que é desligado quando não está sendo utilizado e escalabilidade máxima configurada para 4 nós</li>
+   <li> Particionamento das tabelas, por dia, no Big Query![image](https://user-images.githubusercontent.com/69485358/135367462-aa89594c-e36f-45eb-9b72-17692cc1b719.png)
+ </li>
 </ul>
 
 <br>
