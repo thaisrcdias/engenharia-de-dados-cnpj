@@ -16,7 +16,7 @@ Perguntas Chave
 
 Relatórios Diponibilizados em: https://datastudio.google.com/s/iLCAUxfXSjw
 
-<hr>
+<hr size=1>
 
 <b>Arquitetura do Projeto</b>
 
