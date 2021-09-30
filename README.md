@@ -46,7 +46,9 @@ Essa lambda function faz download dos arquivos e salva em um bucket no S3.<br>
    <li>Javascript para criação das UDF (User Defined Function) que são funções definidas pelo usuário para manipulação dos dados no Dataflow </li>
 </ul>
 <br>
-<b>Tratamento dos Dados</b>
+<b>Transformação via Dataflow</b>
+Para o processamento de dados foi utilizado o Dataflow da GCP.
+Para essa etapa foi necessário destrinchar o dicionário de dados(<i>layouts</i>) disponibilizado pela Receita Federal
 <br>
 <br>
 <b>Características da Solução: </b>
