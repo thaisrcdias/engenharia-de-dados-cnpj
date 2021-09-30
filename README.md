@@ -47,8 +47,11 @@ Essa lambda function faz download dos arquivos e salva em um bucket no S3.<br>
 </ul>
 <br>
 <b>Transformação via Dataflow</b>
+<br>
 Para o processamento de dados foi utilizado o Dataflow da GCP.
-Para essa etapa foi necessário destrinchar o dicionário de dados(<i>layouts</i>) disponibilizado pela Receita Federal
+Nesta etapa foi necessário destrinchar o dicionário de dados(<i>layouts</i>) disponibilizado pela Receita Federal.
+Além disso, foi necessário tratar alguns formatos, como por exemplo: data, número, texto, retirada de aspas duplas.
+
 <br>
 <br>
 <b>Características da Solução: </b>
