@@ -38,6 +38,17 @@ Essa lambda function faz download dos arquivos e salva em um bucket no S3.<br>
 <br>
 <hr>
 <br>
+<b> Linguagens Utilizadas</b>
+<ul>
+   <li>Python (criação das DAGs e cloud function) </li>
+   <li>SQL (Views e transformação dos dados)</li>
+   <li>C# (lambda function)</li>
+   <li>Javascript para criação das UDF (User Defined Function) que são funções definidas pelo usuário para manipulação dos dados no Dataflow </li>
+</ul>
+<br>
+<b>Tratamento dos Dados</b>
+<br>
+<br>
 <b> Estrutura de Pastas</b>
      <ul><li>lambdaS3: Código da lambda function para obtenção dos dados no site da receita federal, que descompacta o afrquivo zip e salva no bucket do S3. </li>
          <li>cloud_function: Código da cloud function para acionamento do airflow.</li>
