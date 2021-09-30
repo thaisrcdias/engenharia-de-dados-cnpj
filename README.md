@@ -35,11 +35,11 @@ Essa lambda function faz download dos arquivos e salva em um bucket no S3.<br>
 <br>
 <b>Pitch da Solução:</b> https://www.youtube.com/watch?v=7vvRjtoIS_Q
 <br>
+<br>
 <b> Estrutura de Pastas</b>
      <ul><li>lambdaS3: Código da lambda function para obtenção dos dados no site da receita federal, que descompacta o afrquivo zip e salva no bucket do S3. </li>
          <li>cloud_function: Código da cloud function para acionamento do airflow.</li>
          <li>pipeline: Script para criação das tabelas, udf(user defined function). As udfs auxiliam na manipulação dos dados no Dataflow.</li>
          <li>script_criacao_views: Scripts SQL para criação das views que respondem as perguntas chaves do desafio.</li>
      </ul>  
-<b>Relatórios
-   Diponibilizados em: https://datastudio.google.com/s/iLCAUxfXSjw
+
