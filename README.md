@@ -1,7 +1,5 @@
 # Hackathon de Engenharia de Dados - A3 Data Challenge Women
 
-![image](https://user-images.githubusercontent.com/69485358/135365065-12b00f55-745b-45c9-854f-f3a24b8c52a9.png)
-
 
 Implementação de um pipeline de extração, transformação e disponibilização de dados da base pública de cnpj.
 Após extração, limpeza, organização e estruturação dos dados, as perguntas chave do desafio devem ser respondidas de maneira visual.
@@ -35,6 +33,7 @@ Essa lambda function faz download dos arquivos e salva em um bucket no S3.<br>
 4. A partir disso será realizada a ingestão de dados no Big Query, que será nosso lakehouse, que é uma junção de data lake com DW. No Big Query foram criadas as seguintes camadas: Raw (onde o dado "bruto" é salvo),  Trusted (onde o dado é salvo, após as devidas limpezas) e Semantic, que é a camada onde possui as Views, para serem consumidas no relatório final.
 
 <br>
+<b>Pitch da Solução:</b> https://www.youtube.com/watch?v=7vvRjtoIS_Q
 <br> Estrutura de Pastas</b>
      <ul><li>lambdaS3: Código da lambda function para obtenção dos dados no site da receita federal, que descompacta o afrquivo zip e salva no bucket do S3. </li>
          <li>cloud_function: Código da cloud function para acionamento do airflow.</li>
