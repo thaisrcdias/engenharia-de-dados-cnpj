@@ -1,4 +1,8 @@
-# engenharia-de-dados-cnpj
+# Hackathon de Engenharia de Dados - A3 Data Challenge Women
+
+![image](https://user-images.githubusercontent.com/69485358/135365065-12b00f55-745b-45c9-854f-f3a24b8c52a9.png)
+
+
 Implementação de um pipeline de extração, transformação e disponibilização de dados da base pública de cnpj.
 Após extração, limpeza, organização e estruturação dos dados, as perguntas chave do desafio devem ser respondidas de maneira visual.
 
