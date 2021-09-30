@@ -74,8 +74,7 @@ Essa lambda function faz download dos arquivos e salva em um bucket no S3.<br>
 <ul> <b>Otimização de Custos</b>
    <li> Armazenamento da fonte de dados na Cloud Storage da GCP</li>
    <li> Utilização do cluster do Dataflow, que é desligado quando não está sendo utilizado e escalabilidade máxima configurada para 4 nós</li>
-   <li> Particionamento das tabelas, por dia, no Big Query![image](https://user-images.githubusercontent.com/69485358/135367462-aa89594c-e36f-45eb-9b72-17692cc1b719.png)
- </li>
+   <li> Particionamento das tabelas, por dia, no Big Query</li>
 </ul>
 
 <br>
